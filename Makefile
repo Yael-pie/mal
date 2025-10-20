@@ -1,4 +1,6 @@
+zsh : fork back
+
 fork :
-	sh fork.sh
+	sh ./zsh/fork.sh
 back :
-	sh back.sh
+	sh ./back.sh
