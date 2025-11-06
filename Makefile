@@ -20,5 +20,4 @@ son:
 	./sonchiant.sh &
 remove_son:
 	@echo "Suppression des conneries..."
-	./volume_max.sh
-	./sonchiant.sh
+	./shit_remover.sh

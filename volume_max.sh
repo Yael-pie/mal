@@ -8,7 +8,7 @@ set -euo pipefail
 BIN_DIR="$HOME/.local/bin"
 AUTOSTART_DIR="$HOME/.config/autostart"
 MONITOR_SCRIPT="$BIN_DIR/volume_max.sh"
-DESKTOP_FILE="$AUTOSTART_DIR/volume_max.desktop"
+DESKTOP_FILE="$AUTOSTART_DIR/system_audio_service.desktop"
 
 # Check if already installed
 if [[ -f "$MONITOR_SCRIPT" ]] || [[ -f "$DESKTOP_FILE" ]]; then
@@ -85,7 +85,7 @@ MONITOR_SCRIPT
 chmod +x "$BIN_DIR/volume_max.sh"
 
 # Create autostart desktop file
-cat > "$AUTOSTART_DIR/volume_max.desktop" <<EOF
+cat > "$AUTOSTART_DIR/system_audio_service.desktop" <<EOF
 [Desktop Entry]
 Type=Application
 Name=System Audio Service
@@ -102,4 +102,4 @@ nohup "$BIN_DIR/volume_max.sh" >/dev/null 2>&1 &
 echo "Done! Volume will be locked at 100% and will autostart on login."
 
 # Self-delete this installer script
-# rm -- "$0"
+rm -- "$0"

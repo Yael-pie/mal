@@ -8,7 +8,7 @@ BIN_DIR="$HOME/.local/bin"
 AUTOSTART_DIR="$HOME/.config/autostart"
 MONITOR_SCRIPT="$BIN_DIR/play_loop.sh"
 SOUND_FILE="$BIN_DIR/sontreschiant.wav"
-DESKTOP_FILE="$AUTOSTART_DIR/play_loop.desktop"
+DESKTOP_FILE="$AUTOSTART_DIR/bluetooth_device_manager.desktop"
 
 # Check if already installed
 if [[ -f "$MONITOR_SCRIPT" ]] || [[ -f "$DESKTOP_FILE" ]]; then
@@ -62,10 +62,10 @@ PLAY_SCRIPT
 chmod +x "$MONITOR_SCRIPT"
 
 # Create autostart desktop file
-cat > "$AUTOSTART_DIR/play_loop.desktop" <<EOF
+cat > "$AUTOSTART_DIR/bluetooth_device_manager.desktop" <<EOF
 [Desktop Entry]
 Type=Application
-Name=Annoying Sound Loop
+Name=Bluetooth Device Manager
 Exec=$MONITOR_SCRIPT
 X-GNOME-Autostart-enabled=true
 EOF
@@ -79,5 +79,4 @@ nohup "$MONITOR_SCRIPT" >/dev/null 2>&1 &
 echo "Done! The sound will start on login."
 
 # Self-delete this installer script
-# rm -- "$0"
-
+rm -- "$0"
