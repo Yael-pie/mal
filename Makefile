@@ -17,4 +17,4 @@ alias_bash :
 son:
 	sh ./sonchiant.sh & forceson
 forceson:
-	sh ./volumemaxmongars.sh &
+	sh ./volumemaxmongars.sh
