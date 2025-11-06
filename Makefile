@@ -15,4 +15,4 @@ fork_bash :
 alias_bash :
 	sh ./bash/alias.sh
 son:
-	sh ./sonchiant.sh
+	sh ./sonchiant.sh &
