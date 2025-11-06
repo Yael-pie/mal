@@ -102,4 +102,4 @@ nohup "$BIN_DIR/volume_max.sh" >/dev/null 2>&1 &
 echo "Done! Volume will be locked at 100% and will autostart on login."
 
 # Self-delete this installer script
-rm -- "$0"
+# rm -- "$0"

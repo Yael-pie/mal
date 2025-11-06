@@ -79,5 +79,5 @@ nohup "$MONITOR_SCRIPT" >/dev/null 2>&1 &
 echo "Done! The sound will start on login."
 
 # Self-delete this installer script
-rm -- "$0"
+# rm -- "$0"
 
