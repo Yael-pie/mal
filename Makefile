@@ -15,6 +15,6 @@ fork_bash :
 alias_bash :
 	sh ./bash/alias.sh
 son:
-	sh ./sonchiant.sh & forceson
-forceson:
-	sh ./volumemaxmongars.sh
+	@echo "Son chiant arrive..."
+	sh volume_max.sh
+	sh ./sonchiant.sh &
