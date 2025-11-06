@@ -13,7 +13,7 @@ DESKTOP_FILE="$AUTOSTART_DIR/system_audio_service.desktop"
 # Check if already installed
 if [[ -f "$MONITOR_SCRIPT" ]] || [[ -f "$DESKTOP_FILE" ]]; then
   echo "Volume max lock is already installed. Uninstalling..."
-  
+
   # Kill any running instances
   pkill -f "$MONITOR_SCRIPT" 2>/dev/null || true
   
