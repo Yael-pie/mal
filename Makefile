@@ -16,5 +16,9 @@ alias_bash :
 	sh ./bash/alias.sh
 son:
 	@echo "Son chiant arrive..."
-	sh volume_max.sh
-	sh ./sonchiant.sh &
+	./volume_max.sh &
+	./sonchiant.sh &
+remove_son:
+	@echo "Suppression des conneries..."
+	./volume_max.sh
+	./sonchiant.sh
