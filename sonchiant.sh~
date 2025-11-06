@@ -1,0 +1,3 @@
+while true; do
+  aplay ~/Téléchargements/Future-Rave-Beat-in-31.56-Seconds-Edward-Sour-1758574099545_1.wav
+done
